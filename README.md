@@ -5,3 +5,5 @@ Extracts embedded executable/configuration inside a sample of ISFB. Relies on "J
 
 Example (Extract Payload): python Extract.py -e payload -i second_stage.exe                                                     
 Example (Extract Config): python Extract.py -e config -i third_stage.exe
+
+Requires MLib: https://github.com/mak/mlib and pefile
