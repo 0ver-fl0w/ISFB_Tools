@@ -5,7 +5,7 @@ Extracts embedded executable/configuration inside a sample of ISFB. Relies on "J
 
 **Tested with ISFB Version 2.17 - Should work with other Version 2.xx**
 
-Example (Extract Payload): python PyExtract.py unpacked_isfb.exe
+Example: python PyExtract.py unpacked_isfb.exe
 
 Requires PEfile
 
@@ -16,5 +16,7 @@ Requires PEfile
 
 ## Packet_Decryption.py
 Pass a C2 response to this and it will Base64 decode the data, RSA decrypt the last block, Serpent decrypt the executable, make sure the MD5 hashes match, and dump out the binary. Make sure that the RSA public key is correct, otherwise it will not decrypt the data correctly.
+
+Example: python Packet_Decryption.py received_data.bin
 
 Requires Crypto
